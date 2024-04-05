@@ -1,0 +1,40 @@
+<h1>Joke Api</h1>
+<p>we suggest you choose Dark humour jokes! Enjoy</p>
+
+<label for="jokeCat" id="catergory">Choose a category: </label>
+
+<select [(ngModel)]="selectedCategory" name="jokeCat" id="jokeCat">
+  <option value="any">Any</option>
+  <option value="spooky">Spooky</option>
+  <option value="programming">Programming</option>
+  <option value="christmas">Christmas</option>
+  <option value="misc">Misc</option>
+  <option value="pun">Pun</option>
+  <option value="Dark">Dark</option>
+</select>
+<br>
+
+<label for="language" id="language">Choose a language: </label>
+<select [(ngModel)]="selectedLanguage" name="language" id="language">
+  <option value="en">English</option>
+  <option value="de">German</option>
+  <option value="es">Spanish</option>
+  <option value="fr">French</option>
+</select>
+<br>
+
+<label for="blacklist" id="blacklist">Flags to blacklist: </label>
+<select [(ngModel)]="flag" name="blFlag" id="blFlag">
+    <option value="none">none</option>
+    <option value="racist">racist</option>
+    <option value="religious">religious</option>
+    <option value="sexist">sexist</option>
+</select>
+
+
+<br>
+
+<br>
+<button (click)="getJoke()">!click for a joke!</button>
+<h2 *ngIf="joke">{{joke.setup}}</h2>
+<h3 *ngIf="joke">{{joke.delivery}}</h3>

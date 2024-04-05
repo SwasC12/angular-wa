@@ -1,0 +1,41 @@
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 72px;
+    background: -webkit-linear-gradient(#d3afd1, #be1fb1,#4f1fbe,#1f89be );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+p{
+    font-family: monospace;
+    font-size: large;
+}
+
+#catergory{
+    font-family: monospace;
+    color: green;
+}
+
+#jokeCat{
+    font-family: monospace;
+    color: blue;
+}
+#blacklist{
+    font-family: monospace;
+    color: green;
+}
+#blFlag{
+    font-family: monospace;
+    color: blue;
+}
+h2{
+    font-family: monospace,sans-serif;
+}
+
+h3{
+    font-family: monospace,sans-serif;
+}
+
+button{
+    font-family: 'Courier New', Courier, monospace;
+}
