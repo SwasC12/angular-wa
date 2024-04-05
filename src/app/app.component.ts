@@ -14,6 +14,9 @@ import { NgModel } from '@angular/forms';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+  title(title: any) {
+    throw new Error('Method not implemented.');
+  }
 
   someMessage: string = 'hello world';
 
